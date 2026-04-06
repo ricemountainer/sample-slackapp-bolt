@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
+    "build": "npm install typescript && npx tsc",
     "serve": "node --require dotenv/config dist/index.js",
     "start": "npm run build && npm run serve"
   },
