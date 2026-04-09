@@ -10,7 +10,6 @@ const app = new App({
 });
 
 app.message('hello' , async({message, say})=>{
-    console.log('debug:' + JSON.stringify(message));
     if ('user' in message) {
       await say(`Hey there <@${message.user||''}>!`);
     }
