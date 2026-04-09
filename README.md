@@ -10,7 +10,7 @@ You can obtain these values on your own Slack App config pages. Please refer [th
 
 # Run on Heroku:
 Please run following commands:
-- `heroku config:set YARN_PRODUCTION=false -a [your heroku app name]`
+- `heroku ps:scale web=0 -a [your heroku app name]`
 - `heroku ps:scale worker=1 -a [your heroku app name]`
  
 The app doesn't need web process because the Interective Mode doesn't need the client app to publish the endpoint. Simply run worker process is adequate to communicate Slack!
